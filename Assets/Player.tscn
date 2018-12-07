@@ -1,0 +1,182 @@
+[gd_scene load_steps=56 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Player/Idle__000.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Player/Idle__001.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Player/Idle__002.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Player/Idle__003.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/Idle__004.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Player/Idle__005.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Player/Idle__006.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Player/Idle__007.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Player/Idle__008.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Player/Idle__009.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Player/Dead__000.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Player/Dead__001.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Player/Dead__002.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Player/Dead__003.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Player/Dead__004.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Player/Dead__005.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Player/Dead__006.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Player/Dead__007.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Player/Dead__008.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Player/Dead__009.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Player/Run__000.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Player/Run__001.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Player/Run__002.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Player/Run__003.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Player/Run__004.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Player/Run__005.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Player/Run__006.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Player/Run__007.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Player/Run__008.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Player/Run__009.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Player/Throw__000.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Player/Throw__001.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Player/Throw__002.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Player/Throw__003.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Player/Throw__004.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Player/Throw__005.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Player/Throw__006.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Player/Throw__007.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Player/Throw__008.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Player/Throw__009.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Player/Jump__000.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Player/Jump__001.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Player/Jump__002.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Player/Jump__003.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Player/Jump__004.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Player/Jump__005.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Player/Jump__006.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Player/Jump__007.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Player/Jump__008.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Player/Jump__009.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Sound/shoot.wav" type="AudioStream" id=52]
+[ext_resource path="res://Assets/Sound/dead.wav" type="AudioStream" id=53]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": false,
+"name": "throw",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "jump",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 45.9333
+height = 102.06
+
+[node name="Player" type="KinematicBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+SPEED = 400
+JUMP_POWER = -700
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "jump"
+frame = 9
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( -0.380249, 0.760506 )
+scale = Vector2( 1, 1.12576 )
+shape = SubResource( 2 )
+
+[node name="Position2D" type="Position2D" parent="." index="2"]
+
+position = Vector2( 13, 2 )
+scale = Vector2( 1, 2 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="Camera2D" type="Camera2D" parent="." index="3"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = 0
+limit_top = -180
+limit_right = 9000
+limit_bottom = 2560
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = true
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Offset", "Smoothing", "Transform", "Visibility", "Z Index" ]
+
+[node name="Blade_Shoot" type="AudioStreamPlayer2D" parent="." index="4"]
+
+stream = ExtResource( 52 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Death" type="AudioStreamPlayer2D" parent="." index="5"]
+
+stream = ExtResource( 53 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Timer" type="Timer" parent="." index="6"]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+
