@@ -80,7 +80,7 @@ Created using GoDot Gaming Engine
 
 * **Jaskarn Judge** - *Map Contribution, Bounds Checking, Collision on Map, Joint work with levels 1-2* - [JasJudge](https://github.com/JasJudge)
 * **Veerpartap Singh** - *Player Contribution, Bounds checking, collision on Player, Joint work with levels 1-2* - [MrSinghve](https://github.com/MrSinghve)
-* **Darasdeep Singh** - *Enemy contribution, Bounds checking collision on Enemy, Joint work with levels 1-2 * - [DarshSingh95](https://github.com/DarshSingh95)
+* **Darasdeep Singh** - *Enemy contribution, Bounds checking, collision on Enemy, Joint work with levels 1-2 * - [DarshSingh95](https://github.com/DarshSingh95)
 
 ## License
 
